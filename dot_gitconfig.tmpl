@@ -1,0 +1,17 @@
+[user]
+    email = 65155757+floriscornel@users.noreply.github.com
+    name = Floris Cornel
+    signingkey = {{ .chezmoi.homeDir }}/.ssh/id_ed25519.pub
+[commit]
+    gpgsign = true
+[core]
+    editor = nano
+    excludesfile = {{ .chezmoi.homeDir }}/.gitignore
+[init]
+    defaultBranch = main
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    allowedSignersFile = {{ .chezmoi.homeDir }}/.ssh/allowed_signers
