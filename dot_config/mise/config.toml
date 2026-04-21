@@ -1,0 +1,3 @@
+[tools]
+"aqua:fish-shell/fish-shell" = "latest"
+chezmoi = "latest"
