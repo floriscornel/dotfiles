@@ -20,6 +20,9 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply floriscornel
 Use `chezmoi` to edit and sync your files across machines:
 
 ```bash
+# Add a new file to be tracked
+chezmoi add ~/.config/fish/config.fish
+
 # Edit a tracked file
 chezmoi edit ~/.config/fish/config.fish
 

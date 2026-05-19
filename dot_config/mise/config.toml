@@ -3,3 +3,4 @@
 chezmoi = "latest"
 zoxide = "latest"
 fzf = "latest"
+starship = "latest"
