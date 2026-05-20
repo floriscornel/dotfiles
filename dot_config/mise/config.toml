@@ -1,6 +1,9 @@
 [tools]
-"aqua:fish-shell/fish-shell" = "latest"
+# Dotfiles
 chezmoi = "latest"
-zoxide = "latest"
-fzf = "latest"
+
+# Shell + dependencies
+"aqua:fish-shell/fish-shell" = "latest"
 starship = "latest"
+fzf = "latest"
+zoxide = "latest"
