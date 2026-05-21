@@ -15,7 +15,6 @@ chezmoi = "latest"
 
 # Shell + dependencies
 "aqua:fish-shell/fish-shell" = "latest"
-starship = "latest"
 fzf = "latest"
 zoxide = "latest"
 usage = "latest"
