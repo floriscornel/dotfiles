@@ -3,6 +3,7 @@
 [settings]
 npm.bun = true
 npm.package_manager = "bun"
+github.credential_command = "mise x gh -- gh auth token"
 
 [shell_alias]
 cm = "chezmoi"
