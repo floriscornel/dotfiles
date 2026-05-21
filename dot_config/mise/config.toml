@@ -1,5 +1,14 @@
 #:schema https://mise.en.dev/schema/mise.json
 
+[settings]
+npm.bun = true
+npm.package_manager = "bun"
+
+[shell_alias]
+cm = "chezmoi"
+ms = "mise"
+pf = "pitchfork"
+
 [tools]
 # Dotfiles
 chezmoi = "latest"
@@ -10,8 +19,34 @@ starship = "latest"
 fzf = "latest"
 zoxide = "latest"
 usage = "latest"
+fastfetch = "latest"
 
-# Local development
+# Local development stack
 pitchfork = "latest"
 postgres = "18"
 redis = "8"
+
+# Programming
+rust = "latest"
+go = "latest"
+nodejs = "lts"
+bun = "latest"
+biome = "latest"
+python = "latest"
+uv = "latest"
+
+# k8s
+azure-cli = "latest"
+kubelogin = "latest"
+azure-kubelogin = "latest"
+kubectl = "latest"
+k9s = "latest"
+helm = "latest"
+
+# cli tools
+gh = "latest"
+jq = "latest"
+bat = "latest"
+delta = "latest"
+fd = "latest"
+ripgrep = "latest"

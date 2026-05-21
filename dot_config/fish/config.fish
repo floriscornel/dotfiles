@@ -14,9 +14,15 @@ if test -f ~/.config/pitchfork/config.toml
     pitchfork completion fish | source
 end
 
+chezmoi completion fish | source
+
 # Load starship
 if test -f ~/.config/starship.toml
     starship init fish | source
 end
 
 export PATH="/opt/homebrew/bin:$PATH"
+
+function fish_greeting
+    fastfetch
+end
