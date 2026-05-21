@@ -9,10 +9,8 @@ chezmoi = "latest"
 starship = "latest"
 fzf = "latest"
 zoxide = "latest"
-
-# Process manager
-pitchfork = "latest"
 usage = "latest"
 
-# State
-postgres = "latest"
+# Local development
+pitchfork = "latest"
+postgres = "18.4"
