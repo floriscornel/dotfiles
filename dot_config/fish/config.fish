@@ -10,9 +10,9 @@ if test -f ~/.config/mise/config.toml
 end
 
 if test -f ~/.config/pitchfork/config.toml
+    pitchfork activate fish | source
     pitchfork completion fish | source
 end
-
 
 # Load starship
 if test -f ~/.config/starship.toml

@@ -4,7 +4,17 @@
 mise = true
 
 [daemons.postgres]
-run = "postgres -D {{ .chezmoi.homeDir }}/.config/pgsql/data"
+run = "postgres -D {{ .chezmoi.homeDir }}/.local/pgsql/data"
 ready_output = "database system is ready to accept connections"
 ready_cmd = "pg_isready -h localhost"
 user = "{{ .chezmoi.username }}" 
+port = 5432
+auto = ["start"] 
+
+[daemons.redis]
+run = "redis-server {{ .chezmoi.homeDir }}/.config/redis/redis.conf"
+ready_output = "Ready to accept connections"
+ready_cmd = "redis-cli ping"
+user = "{{ .chezmoi.username }}"
+port = 6379
+auto = ["start"] 

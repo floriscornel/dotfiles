@@ -13,4 +13,5 @@ usage = "latest"
 
 # Local development
 pitchfork = "latest"
-postgres = "18.4"
+postgres = "18"
+redis = "8"
