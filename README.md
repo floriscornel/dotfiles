@@ -5,7 +5,6 @@ My personal, automated environment for macOS and Linux, managed by [chezmoi](htt
 ## 🛠 Stack
 
 - **[Fish](https://fishshell.com/)**: Primary shell, set as default automatically.
-- **[Starship](https://starship.rs/)**: Fast, customizable prompt.
 - **[Mise](https://mise.en.dev/)**: Global and project-level toolchain manager.
 - **[Pitchfork](https://pitchfork.en.dev/)**: Process manager for development environments.
 
