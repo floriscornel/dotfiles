@@ -1,3 +1,5 @@
+#:schema https://mise.en.dev/schema/mise.json
+
 [tools]
 # Dotfiles
 chezmoi = "latest"
@@ -7,3 +9,10 @@ chezmoi = "latest"
 starship = "latest"
 fzf = "latest"
 zoxide = "latest"
+
+# Process manager
+pitchfork = "latest"
+usage = "latest"
+
+# State
+postgres = "latest"

@@ -1,0 +1,10 @@
+#:schema https://pitchfork.en.dev/schema.json
+
+[settings.general]
+mise = true
+
+[daemons.postgres]
+run = "postgres -D {{ .chezmoi.homeDir }}/.config/pgsql/data"
+ready_output = "database system is ready to accept connections"
+ready_cmd = "pg_isready -h localhost"
+user = "{{ .chezmoi.username }}" 
