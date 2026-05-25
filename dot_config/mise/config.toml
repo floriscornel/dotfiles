@@ -9,6 +9,7 @@ github.credential_command = "mise x gh -- gh auth token"
 cm = "chezmoi"
 ms = "mise"
 pf = "pitchfork"
+zero = "zerostack"
 
 [tools]
 # Dotfiles
@@ -26,7 +27,7 @@ pitchfork = "latest"
 postgres = "18"
 redis = "8"
 
-# Programming
+# Programming languages
 rust = "latest"
 go = "latest"
 nodejs = "lts"
@@ -34,6 +35,10 @@ bun = "latest"
 biome = "latest"
 python = "latest"
 uv = "latest"
+
+# Coding tools
+"cargo:zerostack" = { version = "latest", features = ["acp"] }
+"github:containers/bubblewrap" = "latest"
 
 # k8s
 azure-cli = "latest"
