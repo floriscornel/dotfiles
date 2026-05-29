@@ -10,6 +10,8 @@ cm = "chezmoi"
 ms = "mise"
 pf = "pitchfork"
 zero = "zerostack"
+bm = "bash ~/.local/scripts/background-noise.sh"
+update = "~/.local/scripts/update.sh"
 
 [tools]
 # Dotfiles
