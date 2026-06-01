@@ -9,7 +9,6 @@ github.credential_command = "mise x gh -- gh auth token"
 cm = "chezmoi"
 ms = "mise"
 pf = "pitchfork"
-zero = "zerostack"
 bm = "bash ~/.local/scripts/background-noise.sh"
 update = "~/.local/scripts/update.sh"
 
@@ -37,10 +36,6 @@ bun = "latest"
 biome = "latest"
 python = "latest"
 uv = "latest"
-
-# Coding tools
-"cargo:zerostack" = { version = "latest", features = ["acp"] }
-"github:containers/bubblewrap" = "latest"
 
 # k8s
 azure-cli = "latest"
