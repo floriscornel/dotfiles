@@ -21,7 +21,7 @@ if [ ! -f "$SSH_CONFIG" ]; then
 Host *
 	AddKeysToAgent yes
 	UseKeychain yes
-    IdentityFile $KEY_PATH
+	IdentityFile $KEY_PATH
 	User root
 	SetEnv TERM=xterm-256color
 EOL
