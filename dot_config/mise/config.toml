@@ -39,11 +39,12 @@ uv = "latest"
 
 # k8s
 azure-cli = "latest"
-kubelogin = "latest"
 azure-kubelogin = "latest"
 kubectl = "latest"
 k9s = "latest"
 helm = "latest"
+kubectx = "latest"
+kubens = "latest"
 
 # cli tools
 gh = "latest"
