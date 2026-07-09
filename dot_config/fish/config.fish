@@ -27,6 +27,8 @@ end
 # Fresh terminals (e.g. Ghostty) launch with a minimal PATH that excludes ~/.local/bin.
 test -x ~/.local/bin/mise; and fish_add_path ~/.local/bin
 fish_add_path /opt/homebrew/bin
+fish_add_path ~/.orbstack/bin
+fish_add_path /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 
 command -q mise; and _cached_init mise mise activate fish
 command -q pitchfork; and _cached_init pitchfork pitchfork activate fish
