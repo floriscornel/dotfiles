@@ -11,6 +11,7 @@ ms = "mise"
 pf = "pitchfork"
 bm = "bash ~/.local/scripts/background-noise.sh"
 update = "~/.local/scripts/update.sh"
+goup = "go get -u ./... && go mod tidy"
 
 [tools]
 # Dotfiles
