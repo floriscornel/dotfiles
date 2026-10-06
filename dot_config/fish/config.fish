@@ -28,6 +28,7 @@ end
 test -x ~/.local/bin/mise; and fish_add_path ~/.local/bin
 fish_add_path /opt/homebrew/bin
 fish_add_path ~/.orbstack/bin
+fish_add_path ~/.lmstudio/bin
 fish_add_path /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 
 command -q mise; and _cached_init mise mise activate fish
@@ -36,6 +37,8 @@ command -q pitchfork; and _cached_init pitchfork pitchfork activate fish
 command -q mise; and _cached_completion mise mise completion fish
 command -q pitchfork; and _cached_completion pitchfork pitchfork completion fish
 command -q chezmoi; and _cached_completion chezmoi chezmoi completion fish
+command -q teams; and _cached_completion teams teams completion fish
+command -q kagi; and _cached_completion kagi kagi completion generate fish
 
 functions -e _cached_init _cached_completion
 
