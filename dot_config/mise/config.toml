@@ -36,11 +36,11 @@ golangci-lint = "latest"
 nodejs = "lts"
 bun = "latest"
 biome = "latest"
-python = "latest"
+python = "3.14"
 uv = "latest"
 
 # k8s
-azure-cli = "latest"
+"pypi:azure-cli" = { version = "latest", uvx_args = "--python 3.14" }
 azure-kubelogin = "latest"
 kubectl = "latest"
 k9s = "latest"
