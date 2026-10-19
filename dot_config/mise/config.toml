@@ -22,7 +22,7 @@ chezmoi = "latest"
 fzf = "latest"
 zoxide = "latest"
 usage = "latest"
-fastfetch = "latest"
+"github:fastfetch-cli/fastfetch" = "latest"
 
 # Local development stack
 pitchfork = "latest"
