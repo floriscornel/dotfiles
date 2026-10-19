@@ -36,3 +36,16 @@ git add .
 git commit -m "Update config"
 git push
 ```
+
+## 🧩 macOS file associations
+
+Source/config file types (`.json`, `.md`, `.yaml`, `.toml`, `.sh`, …) default to
+[VS Code](https://code.visualstudio.com) via [duti](https://github.com/moretension/duti).
+`chezmoi apply` installs `duti` through Homebrew when it is missing and only
+rewrites the handlers that actually drifted, so it stays fast and self-healing.
+
+- Edit the mapping: `cm edit ~/.config/duti/settings`
+- Re-apply manually: `duti ~/.config/duti/settings`
+- Inspect one type: `duti -x md` (note: on macOS 26 this can report a shadow
+  UTI such as `public.markdown`; the apply script asks LaunchServices which app
+  it would really use instead)
