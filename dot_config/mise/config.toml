@@ -1,7 +1,6 @@
 #:schema https://mise.en.dev/schema/mise.json
 
 [settings]
-npm.bun = true
 npm.package_manager = "bun"
 github.credential_command = "gh auth token"
 
@@ -12,6 +11,7 @@ pf = "pitchfork"
 bm = "bash ~/.local/scripts/background-noise.sh"
 update = "~/.local/scripts/update.sh"
 goup = "go get -u ./... && go mod tidy"
+sdc = "cd ~/Developer/saas-dev && claude --model opus --effort xhigh"
 
 [tools]
 # Dotfiles
@@ -57,4 +57,5 @@ fd = "latest"
 ripgrep = "latest"
 "github:floriscornel/teams-cli" = "latest"
 "github:Microck/kagi-cli" = "latest"
-opencode = "latest"
+opencode = { version = "latest", allow_builds = ["@opencode/cli"], bun_args = "--trust" }
+

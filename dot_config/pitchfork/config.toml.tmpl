@@ -2,3 +2,6 @@
 
 [settings.general]
 mise = true
+# launchd starts the supervisor at login with PATH=/usr/bin:/bin:/usr/sbin:/sbin, and `mise x` adds the tools but not
+# mise itself: append where mise, docker (OrbStack links it into /usr/local/bin) and Homebrew live
+shell = "sh -c 'PATH=\"$PATH:$HOME/.local/bin:/usr/local/bin:/opt/homebrew/bin\"; eval \"$1\"' sh"
